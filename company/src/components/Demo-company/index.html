@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            border-radius: 15px;
+            background: linear-gradient(to bottom, rgb(108, 174, 108), rgb(63, 63, 215));
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: pop-up 1.5s ease-out forwards;
+        }
+        #yo{
+            background: linear-gradient(to bottom, rgb(87, 240, 53), rgb(23, 220, 210)); 
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        p{
+            color:rgb(253, 250, 250);
+            text-align: center;
+            font-size: large;
+        }
+        @keyframes pop-up {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="box">
+                <!-- Left Box 1 content -->
+                <p>Our mission is to provide safe, secure and valuable solutions to our customers through our expertise</p>
+            </div>
+            <div class="box" id="yo">
+                <!-- Left Box 2 content -->
+                <p>Extensive delivery capability ensures the reach of high quality support to the end user</p>
+            </div>
+            <div class="box">
+                <!-- Left Box 3 content -->
+                <p>Right sized core team that is perfectly fit and nimble for end-to-end customer support</p>
+            </div>
+        </div>
+        <img class="image" src="image.png" alt="Image">
+        <div class="right-column">
+            <div class="box">
+                <!-- Right Box 1 content -->
+                <p>Best-in-class support by trained personnel, ensuring high productivity rate for the end user</p>
+            </div>
+            <div class="box" id="yo">
+                <!-- Right Box 2 content -->
+                <p>Extensive delivery capability ensures the reach of high quality support to the end user</p>
+            </div>
+            <div class="box">
+                <!-- Right Box 3 content -->
+                <p>Right sized core team that is perfectly fit and nimble for end-to-end customer support</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

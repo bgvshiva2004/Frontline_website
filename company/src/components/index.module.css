@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(108, 174, 108), rgb(63, 63, 215));
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* opacity: 0; */
+    /* transform: scale(0.5);
+    animation: pop-up 1.5s ease-out forwards; */
+}
+#yo{
+    background: linear-gradient(to bottom, rgb(87, 240, 53), rgb(23, 220, 210)); 
+}
+.image {
+    max-width: 100%;
+    height: auto;
+}
+p{
+    color:rgb(253, 250, 250);
+    text-align: center;
+    font-size: large;
+}
+@keyframes pop-up {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

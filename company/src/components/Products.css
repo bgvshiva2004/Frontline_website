@@ -1,0 +1,139 @@
+/* #app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+   
+  }
+  
+  body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+   body::before
+  {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(20% at right 70%);
+  }
+  body::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+    overflow-y: scroll;
+  }
+   .row {
+    padding-bottom: 5rem;
+  }
+  */
+  section {
+    height:100vh;
+    
+    font-family: "Raleway",Arial,sans-serif;
+    background-color: #D9F2D1;
+  }
+  .row {
+    padding-top: 120px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .card {
+    position:relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    transition:0.3s;
+    padding: 30px 50px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .card:hover {
+    height:500px;
+  
+  }
+  .imgbox {
+    position: relative;
+    width: 100%;
+    height:100%;
+    transform: translateY(-80px);
+    z-index: 99;
+  }
+  img {
+    width:100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+  }
+  .content {
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-450px);
+    opacity:0;
+    transition: 0.3s;
+  }
+  .card:hover > .content{
+    opacity: 1;
+    transform: translateY(-200px);
+  
+  }
+  .content h2 {
+    color:darkgray;
+  }
+  /*
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundrocket img{
+    height:100px;
+    width:100px;
+    z-index: -400;
+  }
+  */
+  /* .backgroundRocket {
+    background-image: url("../public/rocket.jpg");
+    background-size: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+     background-position: left;
+  } */
+  /*
+  .back {
+    background-image: url('../public/gdsc5.jpg');
+    background-size: 200px;
+    height:200px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .backblock {
+    background-image: url('../public/gdsc4.jpg');
+    background-size: 200px;
+    height:200px;
+    background-repeat: no-repeat;
+    background-position: left;
+  } */
+
+  
+  
